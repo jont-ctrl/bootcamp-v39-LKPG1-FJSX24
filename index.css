@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: hsl(0, 0%, 97%);
+}
+
+header {
+  background-color: rgb(230, 32, 32);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  align-items: center;
+}
+
+header ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header nav {
+  display: flex;
+}
+
+header li a {
+  text-decoration: none;
+  color: white;
+
+  display: inline-block;
+  padding: 2rem;
+}
+
+header li a:hover {
+  background-color: black;
+}
+
+header li {
+  align-items: center;
+  list-style-type: none;
+}
+
+main {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
