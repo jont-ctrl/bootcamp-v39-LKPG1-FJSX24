@@ -1,6 +1,8 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: hsl(0, 0%, 97%);
+  margin: 0;
+  padding: 0;
 }
 
 header {
@@ -45,4 +47,20 @@ main {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  padding: 5rem;
+}
+
+footer {
+  background-color: hsl(0, 0%, 5%);
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 3rem;
+  padding: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialIcons {
+  width: 15%;
 }
