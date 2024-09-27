@@ -15,6 +15,12 @@ header {
   align-items: center;
 }
 
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+  }
+}
+
 header ul {
   display: flex;
   align-items: center;
@@ -33,6 +39,12 @@ header li a {
   padding: 2rem;
 }
 
+.logoTitle {
+  text-decoration: none;
+  color: white;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+
 header li a:hover {
   background-color: black;
 }
@@ -48,6 +60,19 @@ main {
   justify-content: center;
   flex-direction: column;
   padding: 5rem;
+  width: 75%;
+  margin: auto;
+}
+
+.heroTitle {
+  font-size: clamp(1rem, 5vw, 8rem);
+  margin-top: 0;
+}
+
+.swishIcon {
+  width: 50%;
+  margin: auto;
+  padding: 1rem;
 }
 
 footer {
@@ -59,8 +84,20 @@ footer {
   padding: 2rem;
   justify-content: center;
   align-items: center;
+  text-align: center;
+}
+
+.socialFollow {
 }
 
 .socialIcons {
   width: 15%;
+
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  footer {
+    grid-template-columns: 1fr;
+  }
 }

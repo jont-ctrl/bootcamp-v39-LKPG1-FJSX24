@@ -11,6 +11,8 @@ button {
   border-radius: 2rem;
   width: 100%;
   transition: transform 0.1s;
+  margin: 1em;
+  cursor: pointer;
 }
 
 button:hover {
