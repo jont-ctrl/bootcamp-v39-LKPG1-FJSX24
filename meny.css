@@ -1,0 +1,130 @@
+/* General Styling */
+body {
+   
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    color: #333;
+
+   
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: clamp(1.5rem, 5vw, 3rem); /* Responsive font size using clamp */
+  }
+ 
+  
+  /* Menu Container */
+  .menu-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Grid layout for responsiveness */
+    gap: 20px;
+  }
+  
+  /* Menu Category */
+  .menu-category {
+    background-image: url(https://images.pexels.com/photos/2078266/pexels-photo-2078266.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .menu-category h2 {
+    font-size: clamp(1.25rem, 4vw, 2rem); /* Responsive heading size */
+    border-bottom: 2px solid #d32f2f;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: #d32f2f;
+  }
+  
+  /* Menu Item */
+  .menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Image Styling */
+  .menu-img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+  
+  .item-details {
+    flex: 1;
+  }
+  
+  .item-details h3 {
+    margin: 0;
+    font-size: clamp(1.1rem, 3vw, 1.5rem); /* Responsive font size for pizza name */
+  }
+  
+  .item-details p {
+    margin: 5px 0;
+    color: #181818ee;
+    font-size: clamp(0.9rem, 2.5vw, 1.1rem); /* Responsive font for description */
+  }
+  
+  .item-price {
+    font-size: clamp(1rem, 3vw, 1.5rem); /* Responsive price */
+    color: #d32f2f;
+    white-space: nowrap;
+  }
+  
+  /* Grid Layout for Price Section */
+  .menu-item {
+    display: grid;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Responsive Design for Mobile and Smaller Screens */
+  @media (max-width: 768px) {
+    .menu-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .menu-img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+  
+    .item-price {
+      margin-top: 15px;
+    }
+  
+    h1 {
+      font-size: clamp(1.5rem, 4vw, 2.5rem);
+    }
+  
+    .menu-category h2 {
+      font-size: clamp(1rem, 3vw, 1.75rem);
+    }
+  }
+  
+  /* Grid Layout for Menu Items */
+  @media (min-width: 1024px) {
+    .menu-container {
+      grid-template-columns: repeat(2, 1fr); /* Two columns on larger screens */
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .menu-container {
+      grid-template-columns: repeat(3, 1fr); /* Three columns on extra-large screens */
+    }
+  }
+  
