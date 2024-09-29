@@ -1,0 +1,110 @@
+body {
+  font-style: helvetica;
+  padding: 0.5rem 1rem 1rem 1rem;
+  margin: 1rem;
+}
+/*I stort sett en "wrapper" som centrerar innehållet på sidan */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgb(199, 198, 198);
+  border: solid black;
+}
+/*Clamp som anpassar sig till skjärmstorlek och anpassar sig till lämpligaste storlek 1 2 eller 3 beroende till skärmstorlek så stanar den samma */
+h1 {
+  font-size: clamp(1.5rem, 15vw, 2.5rem);
+  text-align: center;
+}
+h2 {
+  text-align: center;
+  font-size: clamp(1rem, 8vw, 1.5rem);
+}
+/* Knappen som visar Tont och pizzans historia, ändrar hemsidan beroende på när knappen är tryckt eller ej bl.a. */
+#ch {
+  display: none; /* osynlig knapp som linkar till ångra läs mer/mindre */
+}
+#ch:checked ~ .content {
+  display: block;
+}
+#ch:checked ~ label {
+  display: none;
+}
+.content {
+  display: none;
+}
+label {
+  display: inline-block;
+  cursor: pointer;
+  background-color: rgb(236, 0, 0);
+  padding: 1rem;
+  border: 2px solid black;
+}
+/*styr bild storlek och centererar innehållet till flexboxen*/
+.pizzabagare {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  max-width: 520px;
+  min-width: 260px;
+  border: solid black;
+  border-radius: 1rem;
+}
+/*Grid för att dela upp paragrapherna i olika columner och rader */
+.tonyinfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  max-width: 100%;
+  align-items: start;
+  padding: 1rem;
+  gap: 10px;
+}
+/* Ändrar bilden till att fylla bredden till 100% av grid containern*/
+.tonybild {
+  width: 100%;
+  max-width: 460px;
+  margin-top: 1.2rem;
+  border: solid black;
+}
+/* Media queries som styr storleken på bilder och text beroende på skärmstorlek */
+@media (max-width: 600px) {
+  .tonyinfo {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    align-items: top;
+  }
+  .pizzabagare {
+    margin-top: 1.5rem;
+  }
+}
+@media (min-width: 900px) {
+  .tonyinfo {
+    /*grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;*/
+    align-items: top;
+  }
+  Body {
+    font-size: 1rem;
+  }
+  .pizzabagare {
+    margin-top: 1.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .tonyinfo {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: top;
+  }
+  Body {
+    font-size: 1rem;
+  }
+  .pizzabagare {
+    margin-top: 1.5rem;
+  }
+}
