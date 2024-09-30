@@ -35,3 +35,7 @@ main {
 img {
   max-width: 100%;
 }
+
+.menuBtnMain {
+  padding: 2rem;
+}
