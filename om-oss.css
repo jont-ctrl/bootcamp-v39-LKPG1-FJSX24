@@ -1,7 +1,5 @@
 body {
-  font-style: helvetica;
-  padding: 0.5rem 1rem 1rem 1rem;
-  margin: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
 }
 /*I stort sett en "wrapper" som centrerar innehållet på sidan */
 main {
