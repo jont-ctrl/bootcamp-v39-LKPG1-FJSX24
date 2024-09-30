@@ -31,3 +31,7 @@ main {
   margin: auto;
   padding: 1rem;
 }
+
+img {
+  max-width: 100%;
+}
