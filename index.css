@@ -15,11 +15,11 @@ main {
   /* width: 75%; */
   margin: auto;
 
-  max-width: 1000px;
+  max-width: 1200px;
 }
 
 .heroTitle {
-  font-size: clamp(1rem, 5vw, 8rem);
+  font-size: clamp(1rem, 4vw, 7rem);
   margin-top: 0;
 }
 
