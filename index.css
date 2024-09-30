@@ -4,7 +4,7 @@ body {
   margin: 0;
   padding: 0;
 }
-
+/* 
 header {
   background-color: rgb(230, 32, 32);
   color: white;
@@ -58,7 +58,7 @@ header li {
   align-items: center;
   list-style-type: none;
 }
-
+ */
 /*slut header*/
 
 main {
@@ -67,8 +67,8 @@ main {
 
   justify-content: center;
   flex-direction: column;
-  padding: 5rem;
-  width: 75%;
+  padding: 2em;
+  /* width: 75%; */
   margin: auto;
 }
 
@@ -84,7 +84,7 @@ main {
 }
 
 /* Footer Css */
-
+/* 
 footer {
   background-color: hsl(0, 0%, 5%);
   color: white;
@@ -113,3 +113,4 @@ footer {
     grid-template-columns: 1fr;
   }
 }
+ */

@@ -11,13 +11,9 @@ header {
 }
 
 .logoImg {
+  /*   width: 15%; */
   width: 5rem;
-}
-
-@media (max-width: 600px) {
-  header {
-    flex-direction: column;
-  }
+  margin-right: 1rem;
 }
 
 header ul {
@@ -59,6 +55,16 @@ header li a:hover {
 header li {
   align-items: center;
   list-style-type: none;
+}
+
+/* Mobile width */
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+  }
+  header li a {
+    padding: 3vw;
+  }
 }
 
 /* Slut på header */
@@ -103,7 +109,7 @@ footer {
   align-items: center;
   text-align: center;
 
-  width: 100%;
+  /* width: 100%; */
 }
 
 .socialFollow {
